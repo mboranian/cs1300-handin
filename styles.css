@@ -1,11 +1,16 @@
 body {
+    background-color: lightblue;
+}
+
+#titleBox {
+    display: flex;
+    justify-content: center;
     background-color: pink;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #Title {
-    display: flex;
-    justify-content: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: lightblue;
 }
 
 #responsiveRedesign {
