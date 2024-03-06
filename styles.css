@@ -1,0 +1,21 @@
+body {
+    background-color: pink;
+}
+
+#Title {
+    display: flex;
+    justify-content: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#responsiveRedesign {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+
+/* mobile below here */
+
+@media screen and (max-width: 600px) {}
