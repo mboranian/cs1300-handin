@@ -45,10 +45,11 @@ body {
 }
 
 .screenshot {
-    width: 50%;
+    width: 55%;
     height: auto;
-    padding-top: 10px;
-    padding-bottom: 20px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    border: 1px solid black;
 }
 
 .responseHeader {
