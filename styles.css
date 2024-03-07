@@ -6,6 +6,7 @@ body {
     margin: 0px;
     padding: 0px;
     margin-bottom: 100px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #titleBox {
@@ -89,6 +90,12 @@ a {
 a:hover {
     /* background-color: rgb(244, 143, 160); */
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.4);
+}
+
+#finalButton {
+    margin-top: 30px;
+    position: relative;
+    left: 15px;
 }
 
 
