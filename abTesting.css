@@ -9,6 +9,8 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+
 #titleBox {
     display: flex;
     text-align: center;
@@ -29,7 +31,7 @@ body {
     margin-top: 0px;
 }
 
-#projectButtons {
+.projectContent {
     display: flex;
     flex-direction: column;
     width: 95%
@@ -52,18 +54,26 @@ body {
 }
 
 .responseHeader {
-    margin-bottom: 0px;
+    margin-bottom: 10px;
     padding-bottom: 0px;
 }
 
 .response {
     position: relative;
-    left: 15px;
+    left: 25px;
     /* text-indent: 20px; */
     padding-right: 100px;
-    padding-top: 0px;
+    padding-top: 10px;
     margin-top: 5px;
     margin-bottom: 0px;
+}
+
+p {
+    position: relative;
+    left: 3%;
+    margin: 5px;
+    margin-right: 10%;
+
 }
 
 a {
@@ -96,15 +106,6 @@ a:hover {
     background-color: lightblue;
     padding: 1%;
 }
-
-#finalButton {
-    margin-top: 30px;
-    position: relative;
-    left: 15px;
-}
-
-
-
 
 
 /* mobile below here */

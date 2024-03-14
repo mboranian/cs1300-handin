@@ -14,7 +14,94 @@
         <a href="./index.html" id="homeButton">Home</a>
     </div>
     <hr id="divider" />
-    
+    <div class="projectContent">
+        <h2>Project Summary</h2>
+        <p class="response">In this project we practiced the basics of A/B testing by collecting data about user
+            interactions with two similar, but slightly different interfaces. We started with a given webpage, collected
+            data, made a minor modification to the webpage, and collected data again. We then used this data to perform
+            statistical analysis for the purpose of understanding which interface is better. A/B testing helps us bring
+            quantitative data to our study of how people interact with our interfaces</p>
+        <h2>Part 1: Data Collection</h2>
+        <div id="part1" class="section">
+            <h3 class="responseHeader">Modified Lab Webpage</h3>
+            <img class="screenshot" src="assets/abLabChange.png"
+                alt="Screensshot of changed UI. The appointment buttons are bluer">
+            <p>I modified the interface by changing the backgound color of the buttons from pale blue
+                to darker blue.
+            </p>
+        </div>
+        <h2>Part 2: Analysis</h2>
+        <div id="part2" class="section">
+            <h3 class="responseHeader">Hypotheses</h3>
+            <h4 class="response">Misclick Rate</h4>
+            <p><b>Null Hypothesis:</b> Changing the color of the buttons will have no affect on the Misclick Rate. I
+                believe this null hypothesis will be rejected because the darker background of the buttons makes them
+                easier to read</p>
+            <p><b>Alternative Hypothesis:</b> Changing the color of the buttons will decrease the Misclick Rate because
+                the darker background makes the text on the buttons easier to read, making it easier to see what the
+                user is clicking on
+            </p>
+            <h4 class="response">Time on Page</h4>
+            <p><b>Null Hypothesis:</b> Changing the color of the buttons will not affect the amount of time spent on the
+                page. I believe this null hypothesis will be rejected because the darker background of the buttons makes
+                them easier to read, meaning less time is required to figure out where to click</p>
+            <p><b>Alternative Hypothesis:</b> Changing the color of the buttons will decrease the amount of time spent
+                on the page because with the darker button background, the text is easier to read, meaning less time
+                needs to be spent figuring out what the buttons do. Also, the buttons no longer look grayed out, leading
+                to less confusion and hesitation about whether they are clickable</p>
+            <h4 class="response">Number of Clicks(My metric of choice)</h4>
+            <p><b>Null Hypothesis:</b> Changing the color of the buttons will have no affect on the total number of
+                clicks. I believe this null hypothesis will be rejected because the buttons are easier to read now and
+                are more clearly clickable, meaning the actions necesary for the task are more obvious, so fewer clicks
+                are necessary</p>
+            <p><b>Alternative Hypothesis:</b> Changing the color of the buttons will decrease the total number of clicks
+                because the darker button background makes the buttons easier to read and makes them look clickable.
+                This makes it more obvious to the user what the need to do to complete the interaction, decreasing the
+                number of unnecessary clicks.
+            </p>
+            <h3 class="responseHeader">Run Statistical Tests on the Data</h3>
+            <a
+                href="https://docs.google.com/spreadsheets/d/1mMZKSLWdBmqNytH86XOfQVFAXkVxnixDpqejFZJhmWk/edit?usp=sharing">Stats
+                Test Calculator</a>
+            <h4 class="response">Misclick Rate</h4>
+            <p>For misclick rate I chose to run a chi-squared test. I chose this test because whether or not a user
+                misclicked is a categorical value. In this case the difference between A and B was not statistically
+                significant. We had a p value of 0.55 which means theres a 55% chance there is no difference between A
+                and B. We had a chi-squared statistic of 0.35 which indicates that the actualy values are not that
+                different from what we would expect if the null hypothesis holds. This test had 1 degree of freedom,
+                meaning there were few independent pieces of information. In this case we fail to reject the
+                null hypothesis</p>
+            <h4 class="response">Time on Page</h4>
+            <p>For time on page I chose to run a one-tailed t-test. I chose this test because time on page is a
+                continuous value and I cared about in what direction the change occured. It was important that I
+                understand whether or not users spent more or less time on the modified interface. In the case of
+                total time on page, the difference between interfaces A and B were statistically significant. We can
+                conclude this pecause the p-value was 0.04, meaning there is only a 4% chance that there is no
+                difference between A and B. This is within the threshold significance that is generally agreed upon,
+                0.05. The T-score in this case was -1.78, indicating that the time spent on B was infact lower than
+                the time spent on A. The degrees of freedom was 40, meaning we had sizable sampel
+                size. In this case we can reject the null hypothesis.
+            </p>
+            <h4 class="response">Number of Clicks</h4>
+            <p>For number of clicks I chose to run a one-tailed t-test. I chose this test because number of clicks is a
+                continuous value and I cared about in what direction the change occured. It was important that I
+                understand whether or not users clicked more or less on the modified interface. In the case of
+                number of clicks, the difference between interfaces A and B were statistically insignificant. We can
+                clonclude this pecause the p-value was 0.36, meaning there is a 36% chance that there is no
+                difference between A and B. The T-score in this case was -0.37, indicating that the time spent on B was
+                lower than the time spent on A in average. The degrees of freedom was 29, meaning we had sizable sampel
+                size. In this case we fail to reject the null hypothesis.</p>
+            <h4 class="response">Summary Statistics</h4>
+            <p>In general, our data yielded some useful information, but was not particularly significant. Only one if
+                the tests had a p-value less than 0.05. We were able to see some helpul trends though that support our
+                changes to the interface. For misclick rate, time on site, and number of clicks we saw the average value
+                decrease once we switched to interface B. This data was not all statistically significant, but these
+                lowering averages could be a good indicator that we are on the right track in improving our interace.
+                Maybe with more time and a larger testing pool we would be able to yield some significant statistics.
+            </p>
+        </div>
+    </div>
+
 </body>
 
 </html>
